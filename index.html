@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temiloluwa's website</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class="header">
+        <!-- navigation -->
+        <nav>
+            <div class="name">Realtemmy</div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#contact">Contact me</a></li>
+            </ul>
+        </nav>
+        <div class="head-text">
+            <h1>Welcome</h1>
+            <p class="info">Temi is a Web developer in Lagos, Nigeria.</p>
+        </div>
+        <div class="btn">
+            <button>Contact me</button>
+        </div>
+        <div class="cursor-down">
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>
+    </header>
+    <main>
+        <h2>Personal projects</h2>
+
+        <!-- Recent clients projects -->
+        <section class="clients"></section>
+
+
+        <section class="personal-projects">
+
+            <!-- social media light and dark toggle -->
+            <div class="social-media">
+                <a href="#">
+                    <img src="images/social-media-dashboard-theme-switch.jpg" alt="tip calculator image">
+                </a>
+                <div class="bottom-section">
+                    <a href="#">Social Media theme switch</a>
+                    <div class="lang-used">HTML, CSS, JavaScript</div>
+                </div>
+            </div>
+
+            <!-- Tip projects -->
+            <div class="tip-calculator">
+                <a href="#">
+                    <img src="images/tip-calculator.jpg" alt="tip calculator image">
+                </a>
+                <div class="bottom-section">
+                    <a href="#">Tip Calculator</a>
+                    <div class="lang-used">HTML, CSS, JavaScript</div>
+                </div>
+            </div>
+
+            <!-- Loopstudio -->
+            <div class="loop-studio">
+                <a href="#">
+                    <img src="images/loopstudio.jpg" alt="loop studio image">
+                </a>
+                <div class="bottom-section">
+                    <a href="#">Loop Studio</a>
+                    <div class="lang-used">HTML, CSS, JavaScript</div>
+                </div>
+            </div>
+
+            <!-- Huddle landing page -->
+            <div class="huddle-page">
+                <a href="#">
+                    <img src="images/huddle-landing-pade.jpg" alt="tip calculator image">
+                </a>
+                <div class="bottom-section">
+                    <a href="#">Huddle page</a>
+                    <div class="lang-used">HTML, CSS, JavaScript</div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Form section -->
+        <section class="contact">
+            <div class="contact-text">
+                <h3>About me</h3>
+                <div class="about">   
+                    <div>
+                        My name is Oguntimehin Temiloluwa, a Full Stack developer (at Meta is what I'd have love to have written, but not yet😜)
+                        and a student of the <b>University Of Lagos, Akoka</b> studying Computer Science.<br>
+                        I'm open to Internships, remote jobs, Contract, working on collaborative projects etc.<br>
+                        I work well with:
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li><del>SCSS.js</del></li>
+                        <li><del>React.js</del></li>
+                        <li><del>Node.js and SQL</del></li>
+                        <li><del>Graph.js and MERN</del></li>
+                    </div>
+                </div>
+                <!-- <p>To get quality and responsive websites for your business, please contact me.</p> -->
+            </div>
+            <form  id="contact">
+                <div>Please contact me and leave your message below, Thanks.</div>
+                <div class="form-name">
+                    <label for="name">Enter name: </label><br>
+                    <input type="text" id="name" class="form-input" placeholder="Enter your name...">
+                </div>
+                <div class="email">
+                    <label for="email">Email:</label><br>
+                    <input type="email" class="form-input" id="email" placeholder="Please input your email">
+                </div>
+                <div class="message">
+                    <textarea id="message" cols="30" rows="5" placeholder="Enter message..."></textarea>
+                </div>
+                <div class="submit-btn">
+                    <input type="submit" value="Submit" class="form-btn form-input">
+                </div>
+                <div class="contact-me">
+                    <p>Details:</p>
+                    <div class="mobile">Phone number: 08066771553</div>
+                    <div class="mail">Email: temiloluwaogunti8@gmail.com</div>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="icons">
+            <div class="facebook icon"></div>
+            <div class="instagram icon"></div>
+            <div class="twitter icon"></div>
+            <div class="github icon"></div>
+            <div class="linked-in icon"></div>
+            <div class="whatsapp icon"></div>
+        </div>
+        <div class="copywright">
+            &COPY; <span id="date"></span>
+        </div>
+    </footer>
+</body>
+<script>
+    const date = document.getElementById('date');
+    const year = new Date().getFullYear();
+    date.textContent = year;
+</script>
+</html>
+
+
+<!-- Recent clients projects -->
+<!-- personal projects -->
+<!-- Email.js or so, for contact us form -->
+<!-- grid- > auto-fill or auto-fit for each section -->
